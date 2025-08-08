@@ -151,7 +151,7 @@ jobs:
 
       - name: Push Docker image to DockerHub
         if: ${{ inputs.provider == 'DOCKERHUB' }}
-        uses: clouddrove/smurf@master
+        uses: clouddrove/smurf@main
         with:
           tool: sdkr
           command: >-
