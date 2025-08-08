@@ -9,7 +9,7 @@ on:
 
 jobs:
   docker:
-    uses: ./.github/workflows/smurf-workflow.yml
+    uses: ./.github/workflows/smurf-workflows.yml
     with:
       provider: DOCKERHUB
       IMAGE_NAME: 'anketclouddrove/smurf-test'
