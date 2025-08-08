@@ -1,0 +1,11 @@
+# Use a small base image
+FROM python:3.9-slim
+
+# Create a 1GB dummy file
+RUN fallocate -l 1G /dummy-1gb-file.txt
+
+# Set working directory
+WORKDIR /app
+
+# Default command
+CMD ["python3", "--version"]
