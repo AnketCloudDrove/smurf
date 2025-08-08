@@ -124,13 +124,13 @@ jobs:
 
       - name: Login to Docker Hub
         if: ${{ inputs.provider == 'DOCKERHUB' }}
-        uses: clouddrove/smurf@main
+        uses: clouddrove/smurf@v1
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
       # - name: Build using Smurf
-      #   uses: clouddrove/smurf@docker/push
+      #   uses: clouddrove/smurf@v1
       #   with:
       #     provider: ${{ inputs.provider }}
       #     tool: sdkr
@@ -151,7 +151,7 @@ jobs:
 
       - name: Push Docker image to DockerHub
         if: ${{ inputs.provider == 'DOCKERHUB' }}
-        uses: clouddrove/smurf@main
+        uses: clouddrove/smurf@v1
         with:
           tool: sdkr
           command: >-
