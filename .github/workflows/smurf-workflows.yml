@@ -102,10 +102,10 @@ jobs:
 
     steps:
       - name: Checkout git repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       # - name: Checkout Smurf from custom branch
-      #   uses: actions/checkout@v4
+      #   uses: actions/checkout@v5
       #   with:
       #     repository: clouddrove/smurf
       #     ref: beta-v1.1.5  # ✅ Replace with any dev/test branch
